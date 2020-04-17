@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name:  db
+  name: db
   labels:
     name: db-service
     app: demo-voting-app
