@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name:  redis
-  label:
+  labels:
     name: redis
     app: demo-voting-app
 spec:
