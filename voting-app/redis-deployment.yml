@@ -3,6 +3,10 @@ kind: Deployment
 metadata:
   name: redis-pod
 spec:
+  selector:
+    matchLabels:
+      name: redis-pod
+      app: demo-voting-app
   replicas: 3
   template:
     metadata:

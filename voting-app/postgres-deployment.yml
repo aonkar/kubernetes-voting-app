@@ -3,6 +3,10 @@ kind: Deployment
 metadata:
   name: postgres-pod
 spec:
+  selector:
+    matchLabels:
+      name: postgres-pod
+      app: demo-voting-app
   replicas: 3
   template:
     metadata:

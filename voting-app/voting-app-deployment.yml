@@ -3,6 +3,10 @@ kind: Deployment
 metadata:
   name: voting-app-pod
 spec:
+  selector:
+    matchLabels:
+      name: voting-app-pod
+      app: demo-voting-app
   replicas: 3
   template:
     metadata:
